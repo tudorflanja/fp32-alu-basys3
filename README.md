@@ -86,21 +86,21 @@ The design uses fully synchronous logic and the Basys3 on-board 100 MHz clock, t
 
 ## 📂 Project Structure
 
-/src
-├─ alu_fp32.vhd
-├─ bcd_to_ieee.vhd
-├─ debouncer.vhd
-├─ division_core.vhd
-├─ division_ieee.vhd
-├─ ieee_to_bcd.vhd
-├─ main_basys3.vhd
-├─ multiplication_core.vhd
-├─ multiplication_ieee.vhd
-├─ number_register.vhd
-└─ sevenseg_bcd4.vhd
-/constraints
-└─ basys3_main.xdc
-README.md
+| Folder | File | Description |
+|--------|------|-------------|
+| `/src` | `alu_fp32.vhd` | Floating-point ALU (FP32) top module |
+| `/src` | `bcd_to_ieee.vhd` | Converts BCD input to IEEE-754 FP32 |
+| `/src` | `debouncer.vhd` | Button signal debouncer |
+| `/src` | `division_core.vhd` | Core logic for FP32 division |
+| `/src` | `division_ieee.vhd` | IEEE-754 wrapper for division core |
+| `/src` | `ieee_to_bcd.vhd` | Converts FP32 output to BCD for display |
+| `/src` | `main_basys3.vhd` | Top-level module mapping design to Basys3 hardware |
+| `/src` | `multiplication_core.vhd` | Core logic for FP32 multiplication |
+| `/src` | `multiplication_ieee.vhd` | IEEE-754 wrapper for multiplication core |
+| `/src` | `number_register.vhd` | Input register for operands |
+| `/src` | `sevenseg_bcd4.vhd` | 4-digit 7-segment display driver |
+| `/constraints` | `basys3_main.xdc` | Pin constraints for Basys3 |
+| *(root)* | `README.md` | Project documentation |
 
 Each VHDL file represents a standalone module intended for separate simulation and reuse.
 
