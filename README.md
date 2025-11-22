@@ -86,3 +86,26 @@ The design uses fully synchronous logic and the Basys3 on-board 100 MHz clock, t
 
 ## 📂 Project Structure
 
+/src
+├─ alu_fp32.vhd
+├─ bcd_to_ieee.vhd
+├─ debouncer.vhd
+├─ division_core.vhd
+├─ division_ieee.vhd
+├─ ieee_to_bcd.vhd
+├─ main_basys3.vhd
+├─ multiplication_core.vhd
+├─ multiplication_ieee.vhd
+├─ number_register.vhd
+└─ sevenseg_bcd4.vhd
+/constraints
+└─ basys3_main.xdc
+README.md
+
+Each VHDL file represents a standalone module intended for separate simulation and reuse.
+
+---
+
+## ▶️ How to Run the Project (Vivado)
+
+### 1️⃣ Clone the repository
