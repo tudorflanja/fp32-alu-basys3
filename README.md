@@ -109,3 +109,68 @@ Each VHDL file represents a standalone module intended for separate simulation a
 ## ▶️ How to Run the Project (Vivado)
 
 ### 1️⃣ Clone the repository
+
+git clone https://github.com/yourusername/your-repo.git
+
+### 2️⃣ Open Vivado
+
+- Create a new RTL project  
+- Add all `.vhd` files  
+- Add the constraint file `basys3_main.xdc`  
+- Set `main_basys3.vhd` as **Top Module**
+
+### 3️⃣ Synthesize, implement & generate bitstream
+
+Synthesis → Implementation → Generate Bitstream
+
+### 4️⃣ Program the Basys3 board
+
+Use **Hardware Manager → Program Device**.
+
+---
+
+## 🔌 Basys3 Pinout (from XDC)
+
+The `basys3_main.xdc` file already maps:
+
+- 7-segment display  
+- Anode control  
+- Switches  
+- Buttons  
+- 100 MHz clock  
+- Reset  
+
+No edits needed unless modifying the I/O architecture.
+
+---
+
+## 🔐 Key Concepts Demonstrated
+
+- Floating-point arithmetic on FPGA  
+- IEEE-754 FP32 encoding and decoding  
+- Pipelined multiplication and division cores  
+- BCD conversion for real-time display  
+- FPGA timing-accurate multi-module integration  
+- 7-segment multiplexing  
+- Debouncing and safe hardware input handling  
+
+---
+
+## 📝 Conclusion
+
+This Basys3 FPGA project demonstrates how to implement a modular **floating-point computation system** entirely in VHDL.  
+It showcases IEEE-754 arithmetic, conversion pipelines, FPGA user-interface design, and synchronous hardware architecture.
+
+This project is ideal for:
+
+- 🎓 Digital design courses  
+- 🧠 Learning IEEE-754 hardware arithmetic  
+- 🔬 FPGA experimentation  
+- 🛠️ Extending into a scientific calculator
+
+Future possible upgrades:
+
+- ➕ FP32 addition and subtraction  
+- 🔢 More 7-segment digits  
+- 🧮 Full multi-operation ALU  
+- 🚀 Deeper pipelining optimizations
