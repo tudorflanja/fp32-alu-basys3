@@ -177,4 +177,4 @@ Future possible upgrades:
 
 ---
 
-This project was completed as part of my studies at the Technical University of Cluj-Napoca (UTCN) 🎓.
+This project was completed for the Structure of Computer Systems course, as part of my studies at the Technical University of Cluj-Napoca (UTCN) 🎓.
