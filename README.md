@@ -174,3 +174,7 @@ Future possible upgrades:
 - 🔢 More 7-segment digits  
 - 🧮 Full multi-operation ALU  
 - 🚀 Deeper pipelining optimizations
+
+---
+
+This project was completed as part of my studies at the Technical University of Cluj-Napoca (UTCN) 🎓.
